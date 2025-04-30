@@ -1,0 +1,55 @@
+
+ARQUIVO DE PROMPTS UTILIZADOS
+
+Trabalho: [Título do Trabalho]
+Equipe: [Nomes completos dos integrantes]
+Modelo(s) LLM Utilizado(s): ChatGPT (GPT-4), Claude, etc.
+Data da geração dos prompts: [Data]
+
+------------------------------------------------------
+[SEÇÃO: ESCOLHA DA BASE DE DADOS]
+Prompt:
+"Me sugira 5 bases de dados públicas com dados de 2024 sobre qualidade do ar em grandes cidades."
+
+Modelo utilizado: ChatGPT (GPT-4)
+Resultado gerado: Lista com links para bases do Kaggle, OpenAQ e dados.gov.br
+
+------------------------------------------------------
+[SEÇÃO: DEFINIÇÃO DO PROBLEMA]
+Prompt:
+"Com base em uma base sobre qualidade do ar em São Paulo, me sugira 3 perguntas orientadas a dados que envolvam análise de tempo e poluição atmosférica."
+
+Modelo utilizado: ChatGPT (GPT-4)
+Resultado gerado:
+1. Como a concentração média de material particulado (PM2.5) variou mês a mês em 2024?
+2. Existem padrões semanais de poluição mais altos em dias úteis?
+3. Como eventos climáticos (chuvas) afetaram a qualidade do ar ao longo do tempo?
+
+------------------------------------------------------
+[SEÇÃO: ANÁLISE EXPLORATÓRIA DE DADOS]
+Prompt:
+"Calcule a média, mediana, moda e desvio padrão da concentração de PM2.5 em cada mês do ano, com base neste CSV."
+
+Modelo utilizado: ChatGPT (GPT-4)
+Resultado gerado: Código Python em pandas com os cálculos estatísticos.
+
+------------------------------------------------------
+[SEÇÃO: VISUALIZAÇÃO DE DADOS]
+Prompt:
+"Quais os melhores tipos de gráficos para analisar variações mensais e semanais de poluentes atmosféricos em um dataset temporal?"
+
+Modelo utilizado: ChatGPT (GPT-4)
+Resultado gerado:
+- Gráfico de linhas para evolução temporal (mensal)
+- Boxplot para distribuição semanal
+- Heatmap para padrões horários
+
+------------------------------------------------------
+[SEÇÃO: CONCLUSÃO E ANÁLISE CRÍTICA]
+Prompt:
+"Como interpretar a queda da média de PM2.5 no segundo semestre? Quais hipóteses poderiam explicar esse comportamento?"
+
+Modelo utilizado: ChatGPT (GPT-4)
+Resultado gerado: Sugeriu possíveis fatores como mudança de estação, maior incidência de chuvas ou políticas públicas ambientais.
+
+------------------------------------------------------
