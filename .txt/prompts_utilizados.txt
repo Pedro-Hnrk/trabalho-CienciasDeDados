@@ -28,7 +28,7 @@ A interação com esses modelos de linguagem é feita através de prompts, que q
 6. Visualização de Dados: Embora ainda limitada, a capacidade de visualização permite criar gráficos simples a partir de dados brutos, agilizando o processo de visualização inicial de tendências.}
 [não é necessário responder a esse prompt]"
 
-Modelo utilizado: ChatGPT, Gemini, DeepSeek.
+Modelo utilizado: ChatGPT (GPT-4), Gemini, DeepSeek.
 Resultado gerado: Reinterpretação concisa do contexto do trabalho, Suporte para criação dos próximos prompts (Deepseek).
 
 Prompt:
@@ -39,7 +39,7 @@ Resultado gerado: Dicas para Uso eficiente das LLMs
 
 
 ------------------------------------------------------
-[SEÇÃO: ESCOLHA E TRATAMENTO DA BASE DE DADOS]
+[ESCOLHA E TRATAMENTO DA BASE DE DADOS]
 Prompt:
 "Atuo como analista de dados iniciante e preciso de um dataset público que inclua informações de 2024 sobre [economia/tecnologia].
 Sugira 3 temas viáveis e links para bases de dados confiáveis (ex.: Kaggle, IBGE, Our World in Data).
@@ -57,24 +57,71 @@ Startup_1,IoT,1,101.09,844.75,67.87,1468,5.2,0,2006,Europe,Private..."
 Modelo utilizado: ChatGPT (GPT-4), Gemini.
 Resultado gerado (ChatGPT): plaintext com exemplo de dicionário de dados e exemplo de registro.
 
-------------------------------------------------------
-[SEÇÃO: DEFINIÇÃO DO PROBLEMA]
 Prompt:
-"Com base em uma base sobre qualidade do ar em São Paulo, me sugira 3 perguntas orientadas a dados que envolvam análise de tempo e poluição atmosférica."
+"Indique possiveis reduções ou limpeza de dados úteis no meu dataset.
+Objetivo: melhorar a qualidade analítica e preparar o dataset para visualizações e análises estatísticas mais precisas."
+
+Modelo utilizado: ChatGPT (GPT-4).
+Resultado gerado (ChatGPT): Sugestões de Limpeza/Redução de Dados:
+- Verificação de Valores Ausentes
+- Conversão de Tipos
+- Remoção de Colunas Redundantes (se houver)
+- Tratamento de Outliers
+- Padronização de Categóricos
+- Criação de Categorias Derivadas
+- Remoção de Registros Duplicados
+
+------------------------------------------------------
+[DEFINIÇÃO DO PROBLEMA]
+Prompt:
+"Tenho um dataset com as colunas: ['Startup Name', 'Industry', 'Funding Rounds', 'Funding Amount (M USD)', 'Valuation (M USD)', 'Revenue (M USD)', 'Employees', 'Market Share (%)', 'Profitable', 'Year Founded', 'Region', 'Exit Status'].   
+Sugira 6 perguntas de pesquisa que:  
+1. Relacionem pelo menos duas variáveis.  
+2. Possam ser respondidas com análise estatística.  
+3. Sejam específicas (ex.: variação temporal, comparação entre categorias)." 
 
 Modelo utilizado: ChatGPT (GPT-4)
 Resultado gerado:
-1. Como a concentração média de material particulado (PM2.5) variou mês a mês em 2024?
-2. Existem padrões semanais de poluição mais altos em dias úteis?
-3. Como eventos climáticos (chuvas) afetaram a qualidade do ar ao longo do tempo?
+1. Existe diferença significativa no valor médio de receita (Revenue) entre startups que são ou não lucrativas (Profitable)?
+2. O número médio de rodadas de financiamento (Funding Rounds) varia de forma significativa entre os diferentes setores da indústria (Industry)?
+3. Existe correlação entre o número de funcionários (Employees) e a avaliação de mercado (Valuation) nas startups fundadas após 2010?
+4. Startups da Europa apresentam maior valorização média (Valuation) do que startups de outras regiões?
+5. Existe uma associação entre o status de saída (Exit Status) e a lucratividade (Profitable) das startups?
+6. O valor de financiamento (Funding Amount) aumenta proporcionalmente ao número de rodadas de financiamento (Funding Rounds)?
 
 ------------------------------------------------------
 [SEÇÃO: ANÁLISE EXPLORATÓRIA DE DADOS]
 Prompt:
-"Calcule a média, mediana, moda e desvio padrão da concentração de PM2.5 em cada mês do ano, com base neste CSV."
+"Em "Análise Exploratória (EDA)
+Objetivo: Gerar estatísticas e insights."
+Gere Prompts para responder as perguntas utilizando **APENAS métodos estatísticos simples, como média, mediana, moda, desvio padrão, percentil :
+"Existe correlação entre o número de funcionários (Employees) e a avaliação de mercado (Valuation) nas startups fundadas após 2010?"
+"Existe uma associação entre o status de saída (Exit Status) e a lucratividade (Profitable) das startups?"
+"Existe diferença significativa no valor médio de receita (Revenue) entre startups que são ou não lucrativas (Profitable)?"
+"Qual região as startups apresentam maior valorização média (Valuation)?""
+
+Modelo utilizado: DeepSeek
+Resultado gerado: 
+"Tenho um dataset de startups com as colunas: 'Employees' (número inteiro), 'Valuation' (em bilhões USD), e 'Founded' (ano). 
+Preciso Filtrar apenas startups fundadas após 2010. E realizar as seguintes análises: 
+1.  Calcular e imprimir no terminal as seguintes estatísticas descritivas para ambas as colunas:  
+   - Média, mediana, moda, desvio padrão.  
+   - Percentis (25%, 50%, 75%, 90%). 
+2. Crie um scatter plot entre 'Employees' e 'Valuation' com linha de tendência
+Apenas forneça o código Python completo  usando pandas, matplotlib e seaborn, e explique cada passo."
+
+Prompt:
+"Tenho um dataset de startups com as colunas: 'Employees' (número inteiro), 'Valuation' (em bilhões USD), e 'Founded' (ano). 
+Preciso Filtrar apenas startups fundadas após 2010. E realizar as seguintes análises: 
+1.  Calcular e imprimir no terminal as seguintes estatísticas descritivas para ambas as colunas:  
+   - Média, mediana, moda, desvio padrão.  
+   - Percentis (25%, 50%, 75%, 90%). 
+2. Crie um scatter plot entre 'Employees' e 'Valuation' com linha de tendência
+Apenas forneça o código Python completo  usando pandas, matplotlib e seaborn, e explique cada passo."
 
 Modelo utilizado: ChatGPT (GPT-4)
-Resultado gerado: Código Python em pandas com os cálculos estatísticos.
+Resultado gerado: código em python.
+
 
 ------------------------------------------------------
 [SEÇÃO: VISUALIZAÇÃO DE DADOS]

@@ -1,19 +1,15 @@
-Nome do Campo | Tipo (Texto/Número/Data) | Descrição
-Startup Name | Texto | Nome fictício ou identificador único da startup.
-Industry | Texto | Setor de atuação principal da startup (ex: IoT, EdTech, Gaming).
-Funding Rounds | Número | O número total de rodadas de investimento que a startup completou.
-Funding Amount (M USD) | Número | O valor total de investimento que a startup recebeu, em milhões de dólares americanos.
-Valuation (M USD) | Número | O valor de mercado (valuation) estimado da startup, em milhões de dólares americanos.
-Revenue (M USD) | Número | A receita anual reportada da startup, em milhões de dólares americanos.
-Employees | Número | O número total de funcionários na startup.
-Market Share (%) | Número | A participação de mercado estimada da startup, em percentual.
-Profitable | Número | Indica se a startup é lucrativa (geralmente representado por 1) ou não (geralmente representado por 0).
-Year Founded | Número | O ano em que a startup foi fundada.
-Region | Texto | A região geográfica principal onde a startup está baseada ou opera.
-Exit Status | Texto | O status de saída da startup no mercado (ex: Private (ainda privada), Acquired (adquirida por outra empresa), IPO (fez Oferta Pública Inicial)).
 
+ARQUIVO DICIONÁRIO DE DADOS
 
-Dicionário de Dados – startup_data.csv
+Trabalho: Ciência de Dados
+Equipe: Henrique, João Pedro, Pedro Henrique de Jesus
+
+AMOSTRA DOS DADOS:
+| Startup Name | Industry | Funding Rounds | Funding Amount (M USD) | Valuation (M USD) | Revenue (M USD) | Employees | Market Share (%) | Profitable | Year Founded | Region | Exit Status |
+| -------------|----------| ---------------| -----------------------|-------------------|-----------------| ----------| -----------------| -----------| -------------| -------| ------------|
+| Startup_1    | IoT      | 1              | 101.09                 | 844.75            | 67.87           | 1468      | 5.2              | 0          | 2006         | Europe | Private     |
+
+DICIONÁRIO DE DADOS – startup_data.csv
 
 | Nome do Campo              | Tipo (Texto/Número/Data) | Descrição                                                              |
 | -------------------------- | ------------------------ | ---------------------------------------------------------------------- |
@@ -29,3 +25,69 @@ Dicionário de Dados – startup_data.csv
 | **Year Founded**           | Número                   | Ano de fundação da startup.                                            |
 | **Region**                 | Texto                    | Região principal de atuação (ex.: Europa, América do Sul, Ásia).       |
 | **Exit Status**            | Texto                    | Situação atual da startup: *Private*, *Acquired* (adquirida) ou *IPO*. |
+
+LIMPEZA/REDUÇÃO DE DADOS
+- Verificação de valores ausentes e duplicados utilizando python:
+" 
+import pandas as pd
+
+# Carregar o arquivo CSV
+df = pd.read_csv('startup_data.csv')
+
+# Verificar valores nulos em cada coluna
+print(df.isnull().sum())
+print(df.duplicated().sum())
+"
+Output:
+##Categoria        ##Duplicados ou nulos
+Startup Name              0
+Industry                  0
+Funding Rounds            0
+Funding Amount (M USD)    0
+Valuation (M USD)         0
+Revenue (M USD)           0
+Employees                 0
+Market Share (%)          0
+Profitable                0
+Year Founded              0
+Region                    0
+Exit Status               0
+
+- Verificação e Padronização de dados categóricos utilizando python:
+"
+import pandas as pd
+import re
+
+# Carregar o arquivo CSV
+df = pd.read_csv('startup_data.csv')  
+
+print(df['Region'].value_counts())
+print(df['Industry'].value_counts())
+print(df['Exit Status'].value_counts())
+"
+Output:
+Australia        108
+Asia             103
+Europe           102
+North America     97
+South America     90
+Name: count, dtype: int64
+Industry
+EdTech           74
+FinTech          71
+E-Commerce       70
+Gaming           62
+AI               62
+IoT              61
+Cybersecurity    51
+HealthTech       49
+Name: count, dtype: int64
+Exit Status
+Private     348
+Acquired    107
+IPO          45
+Name: count, dtype: int64
+
+Conclusão: 
+As verificações constataram que a base de dados estava preparada para para visualização e análises estatísticas no contexto do trabalho.
+

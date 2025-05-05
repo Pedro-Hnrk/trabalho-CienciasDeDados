@@ -1,0 +1,32 @@
+ARQUIVO DE ANALISES E ESTATÍSTICAS 
+
+Trabalho: Ciência de Dados
+Equipe: Henrique, João Pedro, Pedro Henrique de Jesus
+
+------------------------------------------------------
+[Existe correlação entre o número de funcionários (Employees) e a avaliação de mercado (Valuation) nas startups fundadas após 2010?]
+
+Estatísticas para: Employees
+Média: 2514.32
+Mediana: 2498.00
+Moda: 239.00
+Desvio padrão: 1404.93
+Percentil 25%: 1306.00
+Percentil 50% (mediana): 2498.00
+Percentil 75%: 3740.00
+Percentil 90%: 4499.00
+
+Estatísticas para: Valuation (M USD)
+Média: 1320.76
+Mediana: 1177.48
+Moda: 2.43
+Desvio padrão: 965.07
+Percentil 25%: 502.09
+Percentil 50% (mediana): 1177.48
+Percentil 75%: 1981.35
+Percentil 90%: 2548.53
+
+Gráficos: (images\grafico_valuationXfuncionarios.png), (images\tendencia_valuationXfuncionarios.png)
+
+
+------------------------------------------------------
