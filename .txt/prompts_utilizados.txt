@@ -1,18 +1,61 @@
 
 ARQUIVO DE PROMPTS UTILIZADOS
 
-Trabalho: [Título do Trabalho]
-Equipe: [Nomes completos dos integrantes]
-Modelo(s) LLM Utilizado(s): ChatGPT (GPT-4), Claude, etc.
-Data da geração dos prompts: [Data]
+Trabalho: Ciência de Dados
+Equipe: Henrique, João Pedro, Pedro Henrique de Jesus
+Modelo(s) LLM Utilizado(s): ChatGPT (GPT-4), Gemini (2.5 Flash), Deepseek (DeepThink-R1).
+Data da geração dos prompts: 30/04/25 a 
 
 ------------------------------------------------------
-[SEÇÃO: ESCOLHA DA BASE DE DADOS]
+[CONTEXTUALIZAÇÃO]
 Prompt:
-"Me sugira 5 bases de dados públicas com dados de 2024 sobre qualidade do ar em grandes cidades."
+"Esse prompt é contextual para que você possa me auxiliar no desenvolvimento de um trabalho 
+[Referencial teórico] 
+{Atualmente, os Large Language Models (LLM) se tornaram versáteis e poderosos aliados nos processos de entendimento e análise de dados.
 
-Modelo utilizado: ChatGPT (GPT-4)
-Resultado gerado: Lista com links para bases do Kaggle, OpenAQ e dados.gov.br
+A interação com esses modelos de linguagem é feita através de prompts, que quando bem elaborados, produzem excelentes resultados que aceleram todo o processo de análise. O artigo "6 Must-Try ChatGPT Prompts For Data AnalystsLinks to an external site." de Stephen Tracy, orienta o uso de LLMs como o ChatGPT em 6 tarefas da análise exploratória de dados:
+
+1. Criação de Conjuntos de Dados Mock: é possível gerar conjuntos de dados fictícios para simulações de análises, permitindo que você especifique as variáveis e o tipo de dados.
+
+2. Aprendizado e Revisão de Conceitos: o ChatGPT pode ajudar na compreensão de novos conceitos ou revisão de tópicos complexos, como testes estatísticos. Usar prompts específicos que definem o nível de conhecimento do usuário (iniciante ou avançado) melhora a qualidade das respostas.
+
+3. Limpeza de Dados: o ChatGPT pode propor estratégias de tratamento de valores ausentes, formatação de dados e padronização, otimizando o processo.
+
+4. Processamento e Transformação de Dados: o ChatGPT pode auxiliar no pré-processamento de dados, sugerindo métodos para transformar variáveis ou até criando código para manipulação de dados em linguagens como Python.
+
+5. Análise e Resumo dos Dados: o ChatGPT consegue fornecer uma visão geral, identificando tendências e padrões em conjuntos de dados, especialmente úteis em análises de pesquisa e segmentação.
+
+6. Visualização de Dados: Embora ainda limitada, a capacidade de visualização permite criar gráficos simples a partir de dados brutos, agilizando o processo de visualização inicial de tendências.}
+[não é necessário responder a esse prompt]"
+
+Modelo utilizado: ChatGPT, Gemini, DeepSeek.
+Resultado gerado: Reinterpretação concisa do contexto do trabalho, Suporte para criação dos próximos prompts (Deepseek).
+
+Prompt:
+"Sua função será auxiliar na geração dos prompts para cada etapa do trabalho, baseado no contexto apresentado."
+
+Modelo utilizado: DeepSeek.
+Resultado gerado: Dicas para Uso eficiente das LLMs
+
+
+------------------------------------------------------
+[SEÇÃO: ESCOLHA E TRATAMENTO DA BASE DE DADOS]
+Prompt:
+"Atuo como analista de dados iniciante e preciso de um dataset público que inclua informações de 2024 sobre [economia/tecnologia].
+Sugira 3 temas viáveis e links para bases de dados confiáveis (ex.: Kaggle, IBGE, Our World in Data).
+O dataset deve conter pelo menos 5 colunas, incluindo dados numéricos e categóricos."
+
+Modelo utilizado: ChatGPT (GPT-4), Gemini.
+Resultado gerado: Lista com links para bases do Kaggle, OpenAQ e dados.gov.br, instruções para acessar e selecionar as bases de dados.
+
+Prompt:
+"Gere um dicionário de dados para o dataset startup_data.
+Formato: Nome do Campo | Tipo (Texto/Número/Data) | Descrição.
+Amostra: [Startup Name,Industry,Funding Rounds,Funding Amount (M USD),Valuation (M USD),Revenue (M USD),Employees,Market Share (%),Profitable,Year Founded,Region,Exit Status
+Startup_1,IoT,1,101.09,844.75,67.87,1468,5.2,0,2006,Europe,Private..."
+
+Modelo utilizado: ChatGPT (GPT-4), Gemini.
+Resultado gerado (ChatGPT): plaintext com exemplo de dicionário de dados e exemplo de registro.
 
 ------------------------------------------------------
 [SEÇÃO: DEFINIÇÃO DO PROBLEMA]

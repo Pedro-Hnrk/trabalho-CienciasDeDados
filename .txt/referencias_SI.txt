@@ -1,1 +1,5 @@
 https://www.kaggle.com/datasets/samayashar/startup-growth-and-funding-trends (dataset Startups-2024).
+https://analythical.com/blog/6-chatgpt-prompts-for-data-analysis (prompts chatgpt).
+https://chatgpt.com/share/68124206-8620-8006-976b-025540ef86b3 (Agente GPT)
+https://gemini.google.com/app/85dd4ecc7b82ad8b?hl=pt-BR (Gemini Agent)
+https://chat.deepseek.com/a/chat/s/46028baf-fc7c-47b0-a40e-b8fbfdc2040e (DeepSeekAgent)
