@@ -62,7 +62,7 @@ Prompt:
 Objetivo: melhorar a qualidade analítica e preparar o dataset para visualizações e análises estatísticas mais precisas."
 
 Modelo utilizado: ChatGPT (GPT-4).
-Resultado gerado (ChatGPT): Sugestões de Limpeza/Redução de Dados:
+Resultado gerado: Sugestões de Limpeza/Redução de Dados:
 - Verificação de Valores Ausentes
 - Conversão de Tipos
 - Remoção de Colunas Redundantes (se houver)
@@ -90,7 +90,7 @@ Resultado gerado:
 6. O valor de financiamento (Funding Amount) aumenta proporcionalmente ao número de rodadas de financiamento (Funding Rounds)?
 
 ------------------------------------------------------
-[SEÇÃO: ANÁLISE EXPLORATÓRIA DE DADOS]
+[ANÁLISE EXPLORATÓRIA DE DADOS]
 Prompt:
 "Em "Análise Exploratória (EDA)
 Objetivo: Gerar estatísticas e insights."
