@@ -108,7 +108,7 @@ Preciso Filtrar apenas startups fundadas após 2010. E realizar as seguintes an�
    - Média, mediana, moda, desvio padrão.  
    - Percentis (25%, 50%, 75%, 90%). 
 2. Crie um scatter plot entre 'Employees' e 'Valuation' com linha de tendência
-Apenas forneça o código Python completo  usando pandas, matplotlib e seaborn, e explique cada passo."
+Apenas forneça o código Python completo  usando pandas, matplotlib e seaborn, e explique cada passo..."
 
 Prompt:
 "Tenho um dataset de startups com as colunas: 'Employees' (número inteiro), 'Valuation' (em bilhões USD), e 'Founded' (ano). 
@@ -118,6 +118,31 @@ Preciso Filtrar apenas startups fundadas após 2010. E realizar as seguintes an�
    - Percentis (25%, 50%, 75%, 90%). 
 2. Crie um scatter plot entre 'Employees' e 'Valuation' com linha de tendência
 Apenas forneça o código Python completo  usando pandas, matplotlib e seaborn, e explique cada passo."
+
+Modelo utilizado: ChatGPT (GPT-4)
+Resultado gerado: código em python.
+
+Prompt:
+"Gere um codigo em python que analise o dataset de startups com as colunas categóricas 'Exit Status' (ex.: 'IPO', 'Acquired', 'Private') e 'Profitable' (1/0):   
+1. Calcule a **moda** (status de saída mais comum) para startups lucrativas vs. não lucrativas.  
+2. Para cada categoria de 'Exit Status', calcule:  
+   - A **média** (proporção) de startups lucrativas 
+   - A **contagem absoluta** de cada status.  
+3. Compare as distribuições usando percentis (ex.: '75% das startups com IPO são lucrativas').  
+4. Gere um gráfico para analisar a relação"
+
+Modelo utilizado: ChatGPT (GPT-4)
+Resultado gerado: código em python.
+
+Prompt:
+""Código em python que compare a coluna 'Revenue (M USD)' (receita em milhões) entre startups lucrativas ('Profitable'=1) e não lucrativas ('Profitable'=0):   
+1. Calcule para cada grupo:  
+   - Média, mediana, desvio padrão.  
+   - Percentis (25%, 75%).  
+2. Descreva a diferença entre os grupos:  
+   - Ex: 'A receita média das lucrativas é X, enquanto as não lucrativas é Y'.  
+3. Identifique outliers (ex.: startups não lucrativas com receita acima do percentil 90%).  
+4. Gere  gráficos para análise dos Dados"
 
 Modelo utilizado: ChatGPT (GPT-4)
 Resultado gerado: código em python.
@@ -135,11 +160,14 @@ Resultado gerado:
 - Heatmap para padrões horários
 
 ------------------------------------------------------
-[SEÇÃO: CONCLUSÃO E ANÁLISE CRÍTICA]
+[CONCLUSÃO E ANÁLISE CRÍTICA]
 Prompt:
-"Como interpretar a queda da média de PM2.5 no segundo semestre? Quais hipóteses poderiam explicar esse comportamento?"
+"(ilustração do gráfico_valuationXfuncionarios.png)
+(Descrição das estatísticas)
+Com base nessas estatísticas, me ajude a interpretar e analisar os dados. 
+Questão principal: É possível inferir se há uma relação entre o tamanho da equipe e a avaliação de mercado?"
 
 Modelo utilizado: ChatGPT (GPT-4)
-Resultado gerado: Sugeriu possíveis fatores como mudança de estação, maior incidência de chuvas ou políticas públicas ambientais.
+Resultado gerado: Interpretação dos dados.
 
 ------------------------------------------------------

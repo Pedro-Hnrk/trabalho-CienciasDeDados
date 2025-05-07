@@ -28,5 +28,98 @@ Percentil 90%: 2548.53
 
 Gráficos: (images\grafico_valuationXfuncionarios.png), (images\tendencia_valuationXfuncionarios.png)
 
+Fatos:
+- Média ≈ 2.514 funcionários, com grande dispersão (± 1.404).
+- A mediana (2.498) próxima da média indica simetria na distribuição.
+- Moda muito inferior (239) sugere algumas startups pequenas em número, mas não predominantes.
+- Percentis mostram que 75% das startups têm até 3.740 funcionários, e as 10% maiores têm mais de 4.499.
+- Média de Valuation ≈ 1.321M USD (ou 1,32 bilhões USD).
+- A mediana (1.177M) está abaixo da média, o que sugere a presença de startups com valores muito altos, puxando a média para cima.
+- A moda (2,43M) indica um grupo pequeno de startups muito pouco valorizadas.
+- O alto desvio padrão (965M) reforça a alta variação no valor de mercado das startups.
+
+Conclusão:
+- Correlação fraca ou inexistente entre o número de funcionários e o valuation em startups fundadas após 2010.
 
 ------------------------------------------------------
+[Existe uma associação entre o status de saída (Exit Status) e a lucratividade (Profitable) das startups?]
+
+Moda - Startups Lucrativas: Private
+Moda - Startups Não Lucrativas: Private
+
+Proporção de lucratividade por Exit Status:
+ Exit Status
+Acquired    0.448598
+IPO         0.533333
+Private     0.413793
+Name: Profitable, dtype: float64
+
+Contagem absoluta por Exit Status:
+ Exit Status
+Private     348
+Acquired    107
+IPO          45
+Name: count, dtype: int64
+
+Percentis (25%, 50%, 75%) de lucratividade por Exit Status:
+              0.25  0.50  0.75
+Exit Status
+Acquired      0.0   0.0   1.0
+IPO           0.0   1.0   1.0
+Private       0.0   0.0   1.0
+
+Gráficos: (images\grafico_proporcaoLucrativasXstatus.png)
+
+------------------------------------------------------
+[Existe diferença significativa no valor médio de receita (Revenue) entre startups que são ou não lucrativas (Profitable)?]
+
+Estatísticas - Lucrativas
+Média: 50.40 milhões
+Mediana: 49.28 milhões
+Desvio padrão: 29.05
+Percentil 25%: 25.58
+Percentil 75%: 75.68
+
+Estatísticas - Não Lucrativas
+Média: 48.50 milhões
+Mediana: 47.41 milhões
+Desvio padrão: 29.46
+Percentil 25%: 22.43
+Percentil 75%: 74.05
+
+Comparação:
+A receita média das startups lucrativas é 50.40M, enquanto das não lucrativas é 48.50M.
+
+Outliers: Startups NÃO lucrativas com receita acima do percentil 90% (87.65M):
+     Revenue (M USD)
+35             98.20
+57             95.04
+66             92.97
+114            88.23
+126            94.71
+135            98.05
+169            94.67
+193            89.71
+200            89.73
+215            98.84
+220            99.71
+221            97.98
+230            97.35
+233            91.83
+237            90.14
+298            96.63
+305            98.18
+325            87.74
+357            94.82
+365            97.08
+369            98.39
+372            89.16
+376            90.75
+402            88.00
+408            92.95
+440            88.82
+458            91.02
+477            88.98
+488            94.67
+
+Gráficos: (images\grafico_receitaXlucratividade.png), (images\histograma_freqLucratividadeXreceita.png), (images\grafico_outliersNaoLucrativasXreceita.png)
