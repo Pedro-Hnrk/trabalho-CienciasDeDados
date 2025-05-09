@@ -123,3 +123,75 @@ Outliers: Startups NÃO lucrativas com receita acima do percentil 90% (87.65M):
 488            94.67
 
 Gráficos: (images\grafico_receitaXlucratividade.png), (images\histograma_freqLucratividadeXreceita.png), (images\grafico_outliersNaoLucrativasXreceita.png)
+
+------------------------------------------------------
+[Qual região tem startups com maior valorização média (Valuation)?]
+
+Estatísticas por Região:
+                 Média       Mediana    Desvio Padrão   P25       P75       P90
+Region
+Asia           1411.769515  1183.340    1047.364618  561.8600  2131.9650  2864.292
+Australia      1314.677963  1159.370     950.173849  551.0425  1911.2600  2618.066
+Europe         1218.488824  1046.555     889.561188  505.7600  1742.2125  2361.355
+North America  1492.329381  1442.910     985.593744  671.7100  2131.9200  2717.698
+South America  1438.503333  1327.910    1011.792862  732.4025  2052.6350  2745.160
+
+Região com maior média de valuation: North America (1492.33 M USD)
+Região com menor dispersão (menor desvio padrão): Europe (889.56 M USD)
+
+Total de outliers encontrados: 52
+            Region       Valuation (M USD)
+46          Europe            3074.01
+127         Europe            3419.91
+166         Europe            2369.50
+217         Europe            2968.26
+295         Europe            3510.09
+317         Europe            2907.11
+398         Europe            4066.70
+403         Europe            2572.80
+411         Europe            3201.16
+495         Europe            2378.65
+498         Europe            2814.52
+1    South America            3310.83
+48   South America            2903.05
+51   South America            4110.09
+108  South America            4125.56
+178  South America            2756.32
+268  South America            3150.93
+308  South America            3037.59
+360  South America            3721.99
+451  South America            3565.22
+31       Australia            2885.12
+60       Australia            2735.14
+69       Australia            3489.22
+70       Australia            3437.81
+94       Australia            4016.20
+185      Australia            3196.89
+201      Australia            3192.86
+232      Australia            3324.71
+273      Australia            3652.68
+318      Australia            3014.26
+438      Australia            2669.88
+59   North America            2901.85
+141  North America            2768.47
+225  North America            4264.90
+282  North America            2997.22
+341  North America            3242.81
+375  North America            3004.13
+390  North America            3604.47
+397  North America            4110.36
+419  North America            3597.08
+450  North America            2899.21
+14            Asia            2960.94
+61            Asia            3426.14
+89            Asia            3496.17
+95            Asia            2905.87
+179           Asia            3297.03
+250           Asia            3721.48
+252           Asia            3774.33
+326           Asia            3045.72
+364           Asia            4137.15
+384           Asia            4357.49
+456           Asia            3020.16
+
+Gráficos: (images\valuationMedioXregiao.png), (images\mapaValuation.png), (images\grafico_outliersRegiaoXvaluation.png)

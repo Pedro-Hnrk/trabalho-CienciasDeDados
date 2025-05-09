@@ -147,6 +147,19 @@ Prompt:
 Modelo utilizado: ChatGPT (GPT-4)
 Resultado gerado: código em python.
 
+Prompt:
+"Codigo em python que analise o dataset com as colunas 'Region' (ex.: 'North America', 'Asia') e 'Valuation (M USD)' :   
+1. Para cada região, calcule:  
+   - Média, mediana e desvio padrão da avaliação.  
+   - Percentis (25%, 75%, 90%).  
+2. Classifique as regiões pela **média de valuation** e destaque:  
+   - A região com a maior média.  
+   - A região com a menor dispersão (menor desvio padrão).  
+3. Comente sobre outliers (ex.: regiões com valuation acima do percentil 90%). 
+4. Construa um gráfico de mapa para analise"
+
+Modelo utilizado: ChatGPT (GPT-4)
+Resultado gerado: código em python.
 
 ------------------------------------------------------
 [SEÇÃO: VISUALIZAÇÃO DE DADOS]
